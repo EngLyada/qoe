@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner"
+    android:padding="20dp"
+    tools:context=".RateActivity">
+
+    <LinearLayout
+        android:layout_width="385dp"
+        android:layout_height="676dp"
+        android:background="@drawable/rounded_corner"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-10dp"
+        tools:layout_editor_absoluteY="20dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:paddingTop="15dp"
+            android:text="User Experience"
+            android:textAlignment="textStart"
+            android:textColor="@color/design_default_color_background"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:paddingTop="15dp"
+            android:text="How have you experienced the Network"
+
+            android:textColor="@color/design_default_color_background"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/rdGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtView"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="10dp"
+                android:text="Excellent"
+                android:textColor="@color/design_default_color_background" />
+
+            <RadioButton
+                android:id="@+id/vg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="10dp"
+                android:text="Very Good"
+                android:textColor="@color/design_default_color_background" />
+
+            <RadioButton
+                android:id="@+id/g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="10dp"
+                android:text="Good"
+                android:textColor="@color/design_default_color_background" />
+
+            <RadioButton
+                android:id="@+id/p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="10dp"
+                android:text="Poor"
+                android:textColor="@color/design_default_color_background" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/comment"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Add your comment"
+            android:inputType="textMultiLine"
+            android:textColorHint="@color/design_default_color_background" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_corner_buttom"
+            android:text="Submit"
+            android:textColor="@color/design_default_color_background" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
